@@ -32,14 +32,14 @@ body::before {
 
 /* ---------- NAV ---------- */
 
-/*nav {
+nav {
   position: fixed;
   width: 100%;
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}*/
+}
 
 nav {
   background: red !important;
@@ -346,6 +346,7 @@ footer {
   }
 
 }
+
 
 
 
