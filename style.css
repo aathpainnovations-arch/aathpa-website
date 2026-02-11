@@ -35,7 +35,7 @@ body::before {
 nav {
   position: fixed;
   width: 100%;
-  padding: 20px 10%;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -346,6 +346,7 @@ footer {
   }
 
 }
+
 
 
 
