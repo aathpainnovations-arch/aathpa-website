@@ -327,11 +327,12 @@ footer {
   nav {
     padding: 15px 20px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   /* THIS IS IMPORTANT */
     align-items: center;
   }
 
   nav div {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -339,6 +340,8 @@ footer {
   }
 
 }
+
+
 
 
 
