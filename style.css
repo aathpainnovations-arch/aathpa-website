@@ -348,7 +348,209 @@ footer {
   }
 
 }
+/* ================================
+   AATHPA MODERN NAVIGATION
+   ================================ */
 
+nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 112px !important;
+  padding: 10px 42px 8px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  background: rgba(8, 13, 25, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+
+  border-bottom: 1px solid rgba(255,255,255,0.04) !important;
+  z-index: 1000 !important;
+}
+
+.brand {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  color: #00FF9C !important;
+  min-width: 150px !important;
+}
+
+.nav-links {
+  height: 100% !important;
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  gap: 6px !important;
+}
+
+.nav-tab {
+  position: relative !important;
+  min-width: 132px !important;
+  padding: 10px 18px 8px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  color: #AEB8C6 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+
+  text-decoration: none !important;
+  transition: color 0.25s ease, transform 0.25s ease !important;
+}
+
+.nav-tab::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 18% !important;
+  right: 18% !important;
+  bottom: 0 !important;
+
+  height: 3px !important;
+  border-radius: 4px !important;
+
+  background: #00FF9C !important;
+
+  transform: scaleX(0) !important;
+  transition: transform 0.25s ease !important;
+
+  box-shadow: 0 0 12px rgba(0,255,156,0.55) !important;
+}
+
+.nav-tab:hover,
+.nav-tab.active {
+  color: #F4F7FA !important;
+  transform: translateY(-1px) !important;
+}
+
+.nav-tab.active::after {
+  transform: scaleX(1) !important;
+}
+
+.nav-icon {
+  width: 32px !important;
+  height: 32px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.nav-icon svg {
+  width: 31px !important;
+  height: 31px !important;
+
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 2.6 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+.nav-tab.active .nav-icon {
+  color: #00FF9C !important;
+}
+
+/* Mobile menu */
+
+.menu-toggle {
+  display: none;
+  background: none !important;
+  border: 0 !important;
+  padding: 8px !important;
+  cursor: pointer !important;
+}
+
+.menu-toggle span {
+  display: block !important;
+  width: 27px !important;
+  height: 2px !important;
+  margin: 5px 0 !important;
+  background: #00FF9C !important;
+  border-radius: 2px !important;
+}
+
+@media (max-width: 900px) {
+
+  nav {
+    height: 76px !important;
+    padding: 10px 22px !important;
+  }
+
+  .brand {
+    font-size: 24px !important;
+    min-width: auto !important;
+  }
+
+  .menu-toggle {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none !important;
+
+    position: absolute !important;
+    top: 76px !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    flex-direction: column !important;
+
+    padding: 12px 18px 18px !important;
+
+    background: rgba(8,13,25,0.98) !important;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-tab {
+    min-width: 0 !important;
+    width: 100% !important;
+    height: 58px !important;
+
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+
+    padding: 8px 15px !important;
+    gap: 14px !important;
+  }
+
+  .nav-tab::after {
+    left: 0 !important;
+    right: auto !important;
+    bottom: 5px !important;
+
+    width: 4px !important;
+    height: 38px !important;
+
+    transform: scaleY(0) !important;
+  }
+
+  .nav-tab.active::after {
+    transform: scaleY(1) !important;
+  }
+
+  .nav-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
 
 
 
